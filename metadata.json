@@ -1,0 +1,6 @@
+{
+  "name": "Primer Restaurante",
+  "description": "Restaurante contemporâneo com alta gastronomia, ambiente sofisticado e acolhedor, carta de vinhos selecionada e reservas em Fortaleza.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

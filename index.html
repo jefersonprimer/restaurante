@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer Restaurante | Gastronomia Contemporânea & Experiências</title>
+    <meta
+      name="description"
+      content="Restaurante contemporâneo com alta gastronomia, ambiente sofisticado e acolhedor, carta de vinhos selecionada e reservas em Fortaleza."
+    />
+    <meta
+      property="og:title"
+      content="Primer Restaurante | Gastronomia Contemporânea & Experiências"
+    />
+    <meta
+      property="og:description"
+      content="Restaurante contemporâneo com alta gastronomia, ambiente sofisticado e acolhedor, carta de vinhos selecionada e reservas em Fortaleza."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Cormorant Garamond (Display) & Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org JSON-LD for Restaurant -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Primer Restaurante",
+        "image": "/src/assets/images/hero_restaurant_dining_1790496411884.jpg",
+        "servesCuisine": "Contemporânea, Brasileira Contemporânea, Frutos do Mar",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Carlos Vasconcelos, 1090",
+          "addressLocality": "Fortaleza",
+          "addressRegion": "CE",
+          "postalCode": "60115-170",
+          "addressCountry": "BR"
+        },
+        "telephone": "+55-85-3265-2288",
+        "acceptsReservations": "True"
+      }
+    </script>
+  </head>
+  <body
+    class="bg-[#FAF8F5] text-[#1A1714] antialiased selection:bg-[#2A2622] selection:text-[#FAF8F5]"
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
