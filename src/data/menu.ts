@@ -3,6 +3,8 @@
  * Estrutura com categorias reais, descrições gastronômicas precisas e preços em Reais (BRL).
  */
 
+import { images } from "./images";
+
 export type MenuCategoryKey =
   | "entradas"
   | "principais"
@@ -114,7 +116,7 @@ export const menuItems: MenuItem[] = [
     category: "frutos_do_mar",
     featured: true,
     dietary: ["Assinatura", "Sem Glúten"],
-    image: "/src/assets/images/dish_octopus_polvo_1790496439849.jpg",
+    image: images.dishOctopusPolvo,
   },
   {
     id: "mar-2",
@@ -146,7 +148,7 @@ export const menuItems: MenuItem[] = [
     category: "carnes",
     featured: true,
     dietary: ["Assinatura"],
-    image: "/src/assets/images/dish_filet_mignon_1790496453350.jpg",
+    image: images.dishFiletMignon,
   },
   {
     id: "car-2",

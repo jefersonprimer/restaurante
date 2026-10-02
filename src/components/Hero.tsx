@@ -1,4 +1,5 @@
 import { restaurantData, buildWhatsAppUrl } from "../data/restaurant";
+import { images } from "../data/images";
 
 interface HeroProps {
   onOpenReservation: () => void;
@@ -80,7 +81,7 @@ export function Hero({ onOpenReservation }: HeroProps) {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-sm overflow-hidden bg-[#E8E2D5] shadow-sm">
               <img
-                src="/src/assets/images/hero_restaurant_dining_1790496411884.jpg"
+                src={images.heroRestaurantDining}
                 alt="Salão contemporâneo do Primer Restaurante com iluminação intimista e mesas preparadas"
                 referrerPolicy="no-referrer"
                 loading="eager"

@@ -1,4 +1,5 @@
 import { restaurantData } from "../data/restaurant";
+import { images } from "../data/images";
 
 export function About() {
   return (
@@ -12,7 +13,7 @@ export function About() {
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative aspect-[4/3] rounded-sm overflow-hidden bg-[#E8E2D5] shadow-xs">
               <img
-                src="/src/assets/images/about_restaurant_chef_1790496425699.jpg"
+                src={images.aboutRestaurantChef}
                 alt="Chef do Primer Restaurante finalizando prato autoral com ingredientes frescos"
                 referrerPolicy="no-referrer"
                 loading="lazy"

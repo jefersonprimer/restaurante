@@ -8,7 +8,7 @@ export default defineConfig(() => {
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname, '.'),
       },
     },
     server: {
@@ -17,6 +17,23 @@ export default defineConfig(() => {
       hmr: process.env.DISABLE_HMR !== 'true',
       // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
+    },
+    build: {
+      outDir: 'dist',
+      // Emit images under a predictable, unhashed path so crawlers can read a
+      // stable URL for the hero photo from the JSON-LD block in index.html.
+      // JS/CSS keep content hashes for cache busting.
+      rollupOptions: {
+        output: {
+          assetFileNames: (assetInfo) => {
+            const name = assetInfo.names?.[0] ?? '';
+            if (/\.(png|jpe?g|webp|avif|gif|svg)$/i.test(name)) {
+              return 'assets/images/[name][extname]';
+            }
+            return 'assets/[name]-[hash][extname]';
+          },
+        },
+      },
     },
   };
 });

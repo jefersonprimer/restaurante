@@ -2,6 +2,8 @@
  * Galeria de imagens do ambiente, pratos e bastidores do Primer Restaurante
  */
 
+import { images } from "./images";
+
 export interface GalleryItem {
   id: string;
   title: string;
@@ -18,7 +20,7 @@ export const galleryItems: GalleryItem[] = [
     category: "Ambiente",
     caption:
       "Iluminação intimista e conforto acústico para encontros especiais.",
-    image: "/src/assets/images/hero_restaurant_dining_1790496411884.jpg",
+    image: images.heroRestaurantDining,
     aspect: "landscape",
   },
   {
@@ -27,7 +29,7 @@ export const galleryItems: GalleryItem[] = [
     category: "Cozinha",
     caption:
       "Técnicas clássicas e respeito meticuloso ao ponto de cada ingrediente.",
-    image: "/src/assets/images/about_restaurant_chef_1790496425699.jpg",
+    image: images.aboutRestaurantChef,
     aspect: "standard",
   },
   {
@@ -36,7 +38,7 @@ export const galleryItems: GalleryItem[] = [
     category: "Gastronomia",
     caption:
       "Tentáculo braseado com mandioquinha, páprica defumada e ervas da estação.",
-    image: "/src/assets/images/dish_octopus_polvo_1790496439849.jpg",
+    image: images.dishOctopusPolvo,
     aspect: "standard",
   },
   {
@@ -45,7 +47,7 @@ export const galleryItems: GalleryItem[] = [
     category: "Gastronomia",
     caption:
       "Filé mignon em corte alto com demi-glace artesanal e arroz trufado.",
-    image: "/src/assets/images/dish_filet_mignon_1790496453350.jpg",
+    image: images.dishFiletMignon,
     aspect: "standard",
   },
   {
@@ -54,7 +56,7 @@ export const galleryItems: GalleryItem[] = [
     category: "Adega",
     caption:
       "Mais de 160 rótulos mundiais selecionados para harmonizações exclusivas.",
-    image: "/src/assets/images/ambiance_wine_cellar_1790496464564.jpg",
+    image: images.ambianceWineCellar,
     aspect: "standard",
   },
 ];
